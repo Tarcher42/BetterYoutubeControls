@@ -2,6 +2,9 @@
   "ext_name": {
     "message": "BetterYoutubeControls"
   },
+  "popup_title": {
+    "message": "Control Center"
+  },
   "ext_desc": {
     "message": "Enhance your YouTube experience. Block Shorts, comments, live chats, recommendations, end screens, and customize player controls."
   },
