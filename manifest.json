@@ -44,7 +44,12 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "better-youtube@ldlea.dev"
+      "id": "better-youtube@ldlea.dev",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   }
 }
