@@ -109,42 +109,6 @@
   "opt_speed_desc": {
     "message": "Default starting video speed"
   },
-  "opt_ad_skip": {
-    "message": "Ad Skipper"
-  },
-  "opt_ad_skip_desc": {
-    "message": "Auto click skip & fast-forward ads"
-  },
-  "opt_vol_boost": {
-    "message": "Volume Booster"
-  },
-  "opt_vol_boost_desc": {
-    "message": "Boost volume up to 600% (+20dB)"
-  },
-  "opt_mono": {
-    "message": "Mono Downmix"
-  },
-  "opt_mono_desc": {
-    "message": "Merge audio channels into mono"
-  },
-  "opt_bass": {
-    "message": "Bass Boost"
-  },
-  "opt_bass_desc": {
-    "message": "Boost low frequencies (+6dB)"
-  },
-  "opt_limiter": {
-    "message": "Limiter"
-  },
-  "opt_limiter_desc": {
-    "message": "Anti-distortion audio compression"
-  },
-  "opt_per_domain": {
-    "message": "Remember for this Site"
-  },
-  "opt_per_domain_desc": {
-    "message": "Keep volume booster domain-specific"
-  },
   "settings_title": {
     "message": "BetterYoutubeControls Settings"
   },
@@ -171,12 +135,6 @@
   },
   "msg_invalid": {
     "message": "Invalid settings file!"
-  },
-  "original_vol": {
-    "message": "Original Volume"
-  },
-  "boosted_vol": {
-    "message": "Volume Boosted"
   },
   "sys_default": {
     "message": "System Default"

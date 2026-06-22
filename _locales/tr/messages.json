@@ -109,42 +109,6 @@
   "opt_speed_desc": {
     "message": "Videoların başlangıç oynatma hızı"
   },
-  "opt_ad_skip": {
-    "message": "Reklam Engelleyici"
-  },
-  "opt_ad_skip_desc": {
-    "message": "Reklamları otomatik geç ve hızlandır"
-  },
-  "opt_vol_boost": {
-    "message": "Ses Yükseltici"
-  },
-  "opt_vol_boost_desc": {
-    "message": "Sesi %600'e kadar (+20dB) yükselt"
-  },
-  "opt_mono": {
-    "message": "Mono Karıştırıcı"
-  },
-  "opt_mono_desc": {
-    "message": "Kanalları birleştirerek mono ses yap"
-  },
-  "opt_bass": {
-    "message": "Bass Yükseltici"
-  },
-  "opt_bass_desc": {
-    "message": "Düşük frekansları güçlendir (+6dB)"
-  },
-  "opt_limiter": {
-    "message": "Limitleyici"
-  },
-  "opt_limiter_desc": {
-    "message": "Bozulma önleyici ses sıkıştırıcı"
-  },
-  "opt_per_domain": {
-    "message": "Bu Site İçin Hatırla"
-  },
-  "opt_per_domain_desc": {
-    "message": "Ses yükseltici ayarlarını siteye özel tut"
-  },
   "settings_title": {
     "message": "BetterYoutubeControls Ayarları"
   },
@@ -171,12 +135,6 @@
   },
   "msg_invalid": {
     "message": "Geçersiz yedekleme dosyası!"
-  },
-  "original_vol": {
-    "message": "Orijinal Ses"
-  },
-  "boosted_vol": {
-    "message": "Ses Yükseltildi"
   },
   "sys_default": {
     "message": "Sistem Varsayılanı"
