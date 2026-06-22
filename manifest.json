@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "BetterYoutubeControls",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enhance your YouTube experience. Block Shorts, comments, live chats, recommendations, end screens, and customize player controls.",
   "default_locale": "en",
   "icons": {
