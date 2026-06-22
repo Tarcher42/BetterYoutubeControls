@@ -1,0 +1,184 @@
+{
+  "ext_name": {
+    "message": "Better YouTube"
+  },
+  "ext_desc": {
+    "message": "Enhance your YouTube experience. Block Shorts, comments, live chats, recommendations, end screens, and customize player controls."
+  },
+  "status_active": {
+    "message": "$count$ FILTERS ACTIVE",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "status_active_single": {
+    "message": "1 FILTER ACTIVE"
+  },
+  "status_disabled": {
+    "message": "ALL FILTERS DISABLED"
+  },
+  "cat_shorts": {
+    "message": "Shorts Control"
+  },
+  "cat_comments": {
+    "message": "Comments & Chat"
+  },
+  "cat_focus": {
+    "message": "Focus & Clutter"
+  },
+  "cat_player": {
+    "message": "Player Options"
+  },
+  "opt_redirect": {
+    "message": "Redirect Shorts"
+  },
+  "opt_redirect_desc": {
+    "message": "Open Shorts in standard player"
+  },
+  "opt_hide_feed": {
+    "message": "Hide Shorts Feed"
+  },
+  "opt_hide_feed_desc": {
+    "message": "Hide Shorts shelves on feeds"
+  },
+  "opt_remove_shorts": {
+    "message": "Remove YT Shorts"
+  },
+  "opt_remove_shorts_desc": {
+    "message": "Hide Shorts sidebar & pivot tabs"
+  },
+  "opt_hide_comments": {
+    "message": "Hide Comments"
+  },
+  "opt_hide_comments_desc": {
+    "message": "Remove comments completely"
+  },
+  "opt_hide_box": {
+    "message": "Hide Comment Box"
+  },
+  "opt_hide_box_desc": {
+    "message": "Remove comment input box only"
+  },
+  "opt_hide_chat": {
+    "message": "Hide Live Chat"
+  },
+  "opt_hide_chat_desc": {
+    "message": "Hide Live Chat stream panel"
+  },
+  "opt_hide_home": {
+    "message": "Hide Home Feed"
+  },
+  "opt_hide_home_desc": {
+    "message": "Clean homepage recommendations"
+  },
+  "opt_hide_related": {
+    "message": "Hide Related Videos"
+  },
+  "opt_hide_related_desc": {
+    "message": "Hide video sidebar suggestions"
+  },
+  "opt_hide_endscreens": {
+    "message": "Hide End Screens"
+  },
+  "opt_hide_endscreens_desc": {
+    "message": "Hide video overlays & info cards"
+  },
+  "opt_disable_glow": {
+    "message": "Disable Ambient Glow"
+  },
+  "opt_disable_glow_desc": {
+    "message": "Disable theatrical background light"
+  },
+  "opt_scroll_volume": {
+    "message": "Scroll Volume"
+  },
+  "opt_scroll_volume_desc": {
+    "message": "Scroll over video to change volume"
+  },
+  "opt_quality": {
+    "message": "Video Quality"
+  },
+  "opt_quality_desc": {
+    "message": "Preferred default video quality"
+  },
+  "opt_speed": {
+    "message": "Playback Speed"
+  },
+  "opt_speed_desc": {
+    "message": "Default starting video speed"
+  },
+  "opt_ad_skip": {
+    "message": "Ad Skipper"
+  },
+  "opt_ad_skip_desc": {
+    "message": "Auto click skip & fast-forward ads"
+  },
+  "opt_vol_boost": {
+    "message": "Volume Booster"
+  },
+  "opt_vol_boost_desc": {
+    "message": "Boost volume up to 600% (+20dB)"
+  },
+  "opt_mono": {
+    "message": "Mono Downmix"
+  },
+  "opt_mono_desc": {
+    "message": "Merge audio channels into mono"
+  },
+  "opt_bass": {
+    "message": "Bass Boost"
+  },
+  "opt_bass_desc": {
+    "message": "Boost low frequencies (+6dB)"
+  },
+  "opt_limiter": {
+    "message": "Limiter"
+  },
+  "opt_limiter_desc": {
+    "message": "Anti-distortion audio compression"
+  },
+  "opt_per_domain": {
+    "message": "Remember for this Site"
+  },
+  "opt_per_domain_desc": {
+    "message": "Keep volume booster domain-specific"
+  },
+  "settings_title": {
+    "message": "Better YouTube Settings"
+  },
+  "settings_desc": {
+    "message": "Configure advanced player features, clean layouts, and language overrides."
+  },
+  "lbl_language": {
+    "message": "Language / Dil"
+  },
+  "lbl_backup": {
+    "message": "Configuration Backup"
+  },
+  "btn_export": {
+    "message": "Export Settings"
+  },
+  "btn_import": {
+    "message": "Import Settings"
+  },
+  "btn_save": {
+    "message": "Save & Apply"
+  },
+  "msg_imported": {
+    "message": "Settings imported successfully!"
+  },
+  "msg_invalid": {
+    "message": "Invalid settings file!"
+  },
+  "original_vol": {
+    "message": "Original Volume"
+  },
+  "boosted_vol": {
+    "message": "Volume Boosted"
+  },
+  "sys_default": {
+    "message": "System Default"
+  }
+}

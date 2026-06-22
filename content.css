@@ -1,0 +1,136 @@
+/* --- Better YouTube - Combined Content CSS --- */
+
+:root {
+  --iron-icon-color: #606060;
+}
+
+/* --- YouTube Shorts Blocker CSS --- */
+
+/* Sidebar "Shorts" links (Desktop) */
+.youtube-shorts-block a[title='Shorts'],
+.youtube-shorts-block a[title='ショート'],
+.youtube-shorts-block ytd-guide-entry-renderer:has(a[href="/shorts"]),
+.youtube-shorts-block ytd-mini-guide-entry-renderer:has(a[href="/shorts"]) {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* Pivot bar "Shorts" tab (Mobile) */
+.youtube-shorts-block ytm-pivot-bar-item-renderer:has(.pivot-bar-item-tab.pivot-shorts) {
+  display: none !important;
+}
+
+/* Open in normal video button overlay in shorts player */
+#block.youtube-shorts-block {
+  color: white;
+  margin: 6px 0;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  font-size: 14px;
+  user-select: none;
+  cursor: pointer;
+}
+
+#block.youtube-shorts-block > svg {
+  fill: white;
+  margin: auto;
+}
+
+/* Disable the display of loading spinners */
+ytd-continuation-item-renderer:not(:last-child) {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  #block.youtube-shorts-block {
+    color: var(--iron-icon-color);
+  }
+  #block.youtube-shorts-block > svg {
+    fill: var(--iron-icon-color);
+  }
+}
+
+
+/* --- Comments & Live Chat Blocker CSS --- */
+
+/* Live Chat Hiding */
+html[cc_hide_chat="true"] ytd-live-chat-frame#chat,
+html[cc_hide_chat="true"] #chat {
+  display: none !important;
+}
+
+/* Hide Add Comment Box Only (When Comments are visible) */
+html[cc_hide_comment_box="true"][cc_hide_comments="false"] #simple-box.ytd-comments-header-renderer,
+html[cc_hide_comment_box="true"][cc_hide_comments="false"] ytm-comment-simplebox-renderer,
+html[cc_hide_comment_box="true"][cc_hide_comments="false"] ytm-engagement-panel-section-list-renderer > ytm-section-list-renderer > ytm-comment-simplebox-renderer {
+  display: none !important;
+}
+
+/* Hide Comments Teaser/Header Only (When comment box is visible) */
+html[cc_hide_comments="true"] #comment-teaser,
+html[cc_hide_comments="true"][cc_hide_comment_box="false"] #title.ytd-comments-header-renderer,
+html[cc_hide_comments="true"][cc_hide_comment_box="false"] .comment-section-content > :not(ytm-comment-simplebox-renderer),
+html[cc_hide_comments="true"][cc_hide_comment_box="false"] ytm-engagement-panel-section-list-renderer > ytm-section-list-renderer > lazy-list {
+  display: none !important;
+}
+
+/* Hide Entire Comments Block */
+html[cc_hide_comments="true"][cc_hide_comment_box="true"] #comments,
+html[cc_hide_comments="true"][cc_hide_comment_box="true"] ytm-comment-section-renderer,
+html[cc_hide_comments="true"][cc_hide_comment_box="true"] ytm-comments-entry-point-header-renderer,
+html[cc_hide_comments="true"][cc_hide_comment_box="true"] ytm-engagement-panel {
+  display: none !important;
+}
+
+/* Prevent flicker by hiding comments content while keeping header */
+html[cc_hide_comments="true"][cc_hide_comment_box="false"] .ytd-comments > :not(#header) {
+  opacity: 0 !important;
+}
+
+
+/* --- Focus & Distractions CSS --- */
+
+/* Hide Home Feed Recommendations */
+html[cc_hide_home_feed="true"] ytd-browse[page-subtype="home"] #primary,
+html[cc_hide_home_feed="true"] ytd-browse[page-subtype="home"] #contents,
+html[cc_hide_home_feed="true"] ytm-browse[page-subtype="home"] #contents {
+  display: none !important;
+}
+
+/* Focus Mode message inside empty homepage */
+html[cc_hide_home_feed="true"] ytd-browse[page-subtype="home"]::after {
+  content: "Better YouTube: Focus Mode Active";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #7a7a85;
+  height: 50vh;
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Hide Watch Page Sidebar Recommendations */
+html[cc_hide_related="true"] #secondary.ytd-watch-flexy,
+html[cc_hide_related="true"] ytm-item-section-renderer[section-identifier="related-items"] {
+  display: none !important;
+}
+
+/* Hide Video End Screen suggestions */
+html[cc_hide_end_screens="true"] .ytp-ce-element,
+html[cc_hide_end_screens="true"] .ytp-ce-covering-overlay,
+html[cc_hide_end_screens="true"] .ytp-ce-element-show,
+/* Hide Info Cards (i-icon in top-right) & teasers */
+html[cc_hide_end_screens="true"] .ytp-cards-button,
+html[cc_hide_end_screens="true"] .ytp-cards-teaser {
+  display: none !important;
+}
+
+/* Disable Ambient Glow Effect behind Video Player */
+html[cc_disable_ambient_glow="true"] #cinematic.ytd-watch-flexy,
+html[cc_disable_ambient_glow="true"] #cinematic-container {
+  display: none !important;
+}

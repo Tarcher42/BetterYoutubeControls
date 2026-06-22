@@ -1,0 +1,184 @@
+{
+  "ext_name": {
+    "message": "Better YouTube"
+  },
+  "ext_desc": {
+    "message": "YouTube deneyiminizi geliştirin. Shorts, yorumlar, canlı sohbetler, öneriler ve bitiş ekranlarını engelleyin ve oynatıcı kontrollerini özelleştirin."
+  },
+  "status_active": {
+    "message": "$count$ FİLTRE AKTİF",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "status_active_single": {
+    "message": "1 FİLTRE AKTİF"
+  },
+  "status_disabled": {
+    "message": "TÜM FİLTRELER DEVRE DIŞI"
+  },
+  "cat_shorts": {
+    "message": "Shorts Kontrolleri"
+  },
+  "cat_comments": {
+    "message": "Yorum & Sohbet"
+  },
+  "cat_focus": {
+    "message": "Odaklanma & Düzen"
+  },
+  "cat_player": {
+    "message": "Oynatıcı Seçenekleri"
+  },
+  "opt_redirect": {
+    "message": "Shorts Yönlendirici"
+  },
+  "opt_redirect_desc": {
+    "message": "Shorts'ları normal oynatıcıda aç"
+  },
+  "opt_hide_feed": {
+    "message": "Shorts Akışını Gizle"
+  },
+  "opt_hide_feed_desc": {
+    "message": "Feed'lerdeki Shorts raflarını gizle"
+  },
+  "opt_remove_shorts": {
+    "message": "Remove YT Shorts"
+  },
+  "opt_remove_shorts_desc": {
+    "message": "Sol menü & mobil alt sekmeleri gizle"
+  },
+  "opt_hide_comments": {
+    "message": "Yorumları Gizle"
+  },
+  "opt_hide_comments_desc": {
+    "message": "Yorum alanını tamamen kaldır"
+  },
+  "opt_hide_box": {
+    "message": "Yorum Kutusunu Gizle"
+  },
+  "opt_hide_box_desc": {
+    "message": "Sadece yorum yazma alanını kaldır"
+  },
+  "opt_hide_chat": {
+    "message": "Canlı Sohbeti Gizle"
+  },
+  "opt_hide_chat_desc": {
+    "message": "Canlı sohbet akış panelini gizle"
+  },
+  "opt_hide_home": {
+    "message": "Ana Sayfayı Temizle"
+  },
+  "opt_hide_home_desc": {
+    "message": "Önerilen videoları ana sayfadan kaldır"
+  },
+  "opt_hide_related": {
+    "message": "Önerilenleri Gizle"
+  },
+  "opt_hide_related_desc": {
+    "message": "Oynatıcı yanındaki video önerilerini gizle"
+  },
+  "opt_hide_endscreens": {
+    "message": "Bitiş Ekranlarını Engelle"
+  },
+  "opt_hide_endscreens_desc": {
+    "message": "Video bitiş ekran kartlarını ve infoları gizle"
+  },
+  "opt_disable_glow": {
+    "message": "Sinema Işığını Kapat"
+  },
+  "opt_disable_glow_desc": {
+    "message": "Oynatıcı arkasındaki sinematik ışığı kapat"
+  },
+  "opt_scroll_volume": {
+    "message": "Kaydırma ile Ses Kontrolü"
+  },
+  "opt_scroll_volume_desc": {
+    "message": "Video üstünde fare tekerleğiyle ses ayarla"
+  },
+  "opt_quality": {
+    "message": "Görüntü Kalitesi"
+  },
+  "opt_quality_desc": {
+    "message": "Varsayılan video çözünürlüğü"
+  },
+  "opt_speed": {
+    "message": "Varsayılan Hız"
+  },
+  "opt_speed_desc": {
+    "message": "Videoların başlangıç oynatma hızı"
+  },
+  "opt_ad_skip": {
+    "message": "Reklam Engelleyici"
+  },
+  "opt_ad_skip_desc": {
+    "message": "Reklamları otomatik geç ve hızlandır"
+  },
+  "opt_vol_boost": {
+    "message": "Ses Yükseltici"
+  },
+  "opt_vol_boost_desc": {
+    "message": "Sesi %600'e kadar (+20dB) yükselt"
+  },
+  "opt_mono": {
+    "message": "Mono Karıştırıcı"
+  },
+  "opt_mono_desc": {
+    "message": "Kanalları birleştirerek mono ses yap"
+  },
+  "opt_bass": {
+    "message": "Bass Yükseltici"
+  },
+  "opt_bass_desc": {
+    "message": "Düşük frekansları güçlendir (+6dB)"
+  },
+  "opt_limiter": {
+    "message": "Limitleyici"
+  },
+  "opt_limiter_desc": {
+    "message": "Bozulma önleyici ses sıkıştırıcı"
+  },
+  "opt_per_domain": {
+    "message": "Bu Site İçin Hatırla"
+  },
+  "opt_per_domain_desc": {
+    "message": "Ses yükseltici ayarlarını siteye özel tut"
+  },
+  "settings_title": {
+    "message": "Better YouTube Ayarları"
+  },
+  "settings_desc": {
+    "message": "Gelişmiş oynatıcı özelliklerini yapılandırın, düzeni temizleyin ve dili ayarlayın."
+  },
+  "lbl_language": {
+    "message": "Dil / Language"
+  },
+  "lbl_backup": {
+    "message": "Ayarları Yedekle"
+  },
+  "btn_export": {
+    "message": "Ayarları Dışa Aktar"
+  },
+  "btn_import": {
+    "message": "Ayarları İçe Aktar"
+  },
+  "btn_save": {
+    "message": "Kaydet ve Uygula"
+  },
+  "msg_imported": {
+    "message": "Ayarlar başarıyla içe aktarıldı!"
+  },
+  "msg_invalid": {
+    "message": "Geçersiz yedekleme dosyası!"
+  },
+  "original_vol": {
+    "message": "Orijinal Ses"
+  },
+  "boosted_vol": {
+    "message": "Ses Yükseltildi"
+  },
+  "sys_default": {
+    "message": "Sistem Varsayılanı"
+  }
+}

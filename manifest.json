@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Better YouTube",
+  "version": "1.0.0",
+  "description": "Enhance your YouTube experience. Block Shorts, comments, live chats, recommendations, end screens, and customize player controls.",
+  "default_locale": "en",
+  "icons": {
+    "16": "icons/icon.svg",
+    "32": "icons/icon.svg",
+    "48": "icons/icon.svg",
+    "64": "icons/icon.svg",
+    "128": "icons/icon.svg"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://m.youtube.com/*",
+        "*://*.youtube-nocookie.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon.svg",
+      "32": "icons/icon.svg",
+      "48": "icons/icon.svg",
+      "64": "icons/icon.svg",
+      "128": "icons/icon.svg"
+    },
+    "default_title": "Better YouTube",
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "better-youtube@ldlea.dev"
+    }
+  }
+}

@@ -1,0 +1,259 @@
+/* Better YouTube - Gelişmiş Ayarlar (Options Page) CSS */
+
+:root {
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --card-border: #dadce0;
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  
+  /* Category Accent Colors */
+  --color-blue: #1a73e8;
+  --color-blue-bg: #e8f0fe;
+  
+  --color-purple: #c026d3;
+  --color-purple-bg: #fdf4ff;
+  
+  --color-orange: #ea580c;
+  --color-orange-bg: #fff7ed;
+  
+  --color-green: #16a34a;
+  --color-green-bg: #f0fdf4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  box-sizing: border-box;
+}
+
+.settings-container {
+  max-width: 680px;
+  margin: 40px auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* Header section */
+.settings-header {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.settings-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.settings-header p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Base Settings Card */
+.settings-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+
+.settings-card h2 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-primary);
+  border-bottom: 1.5px solid #f1f3f4;
+  padding-bottom: 8px;
+}
+
+/* Setting Rows Layout */
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.setting-row:last-child {
+  border-bottom: none;
+}
+
+.setting-row.border-bottom {
+  border-bottom: 1.5px solid #f1f3f4;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.setting-info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 16px;
+}
+
+.setting-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.setting-desc {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* Custom CSS Switch Toggles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dadce0;
+  transition: .25s ease;
+  border-radius: 10px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .25s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+.toggle-blue input:checked + .slider {
+  background-color: var(--color-blue);
+}
+
+.toggle-purple input:checked + .slider {
+  background-color: var(--color-purple);
+}
+
+.toggle-orange input:checked + .slider {
+  background-color: var(--color-orange);
+}
+
+.toggle-green input:checked + .slider {
+  background-color: var(--color-green);
+}
+
+/* Select Dropdown Elements */
+.dropdown-select {
+  background-color: #f8f9fa;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  min-width: 130px;
+}
+
+.dropdown-select:hover {
+  background-color: #f1f3f4;
+  border-color: #bdc1c6;
+  color: var(--text-primary);
+}
+
+.dropdown-select.border-green {
+  border-color: var(--color-green);
+  color: var(--color-green);
+}
+
+.dropdown-select.border-green:hover {
+  background-color: var(--color-green-bg);
+}
+
+.dropdown-select.border-grey {
+  border-color: var(--card-border);
+  color: var(--text-primary);
+}
+
+/* Backup and Configuration section */
+.backup-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.action-btn {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.export-btn {
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  color: white;
+}
+
+.export-btn:hover {
+  background-color: #1765cc;
+  border-color: #1765cc;
+  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.25);
+}
+
+.import-btn {
+  background-color: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-primary);
+}
+
+.import-btn:hover {
+  background-color: #f1f3f4;
+  border-color: #bdc1c6;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better YouTube</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="card">
+    
+    <!-- Header with Settings Gear -->
+    <div class="header-container">
+      <div class="status-title" data-i18n="ext_name">Better YT</div>
+      <button id="btn-settings" class="settings-btn" data-i18n-title="settings_title" title="Open Settings Panel">
+        <svg class="gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-2.83a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Subtitle: Active Count -->
+    <div id="status-subtitle" class="status-subtitle" data-i18n="status_disabled">ALL FILTERS DISABLED</div>
+
+    <!-- Settings Scroll Area -->
+    <div class="settings-scroll-area">
+
+      <!-- Category: Shorts -->
+      <div class="category-section">
+        <div class="category-header" data-i18n="cat_shorts">Shorts Control</div>
+        
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_redirect">Redirect Shorts</div>
+            <div class="setting-desc" data-i18n="opt_redirect_desc">Open Shorts in standard player</div>
+          </div>
+          <label class="switch toggle-blue">
+            <input type="checkbox" id="isEnable">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_hide_feed">Hide Shorts Feed</div>
+            <div class="setting-desc" data-i18n="opt_hide_feed_desc">Hide Shorts shelves on feeds</div>
+          </div>
+          <label class="switch toggle-blue">
+            <input type="checkbox" id="isHideVideos">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_remove_shorts">Remove YT Shorts</div>
+            <div class="setting-desc" data-i18n="opt_remove_shorts_desc">Hide Shorts sidebar & pivot tabs</div>
+          </div>
+          <label class="switch toggle-blue">
+            <input type="checkbox" id="isHideTabs">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Category: Comments -->
+      <div class="category-section">
+        <div class="category-header" data-i18n="cat_comments">Comments & Chat</div>
+        
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_hide_comments">Hide Comments</div>
+            <div class="setting-desc" data-i18n="opt_hide_comments_desc">Remove comments completely</div>
+          </div>
+          <label class="switch toggle-purple">
+            <input type="checkbox" id="hide_comments">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_hide_box">Hide Comment Box</div>
+            <div class="setting-desc" data-i18n="opt_hide_box_desc">Remove comment input box only</div>
+          </div>
+          <label class="switch toggle-purple">
+            <input type="checkbox" id="hide_comment_box">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_hide_chat">Hide Live Chat</div>
+            <div class="setting-desc" data-i18n="opt_hide_chat_desc">Hide Live Chat stream panel</div>
+          </div>
+          <label class="switch toggle-purple">
+            <input type="checkbox" id="hide_chat">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Category: Focus & Clutter -->
+      <div class="category-section">
+        <div class="category-header" data-i18n="cat_focus">Focus & Clutter</div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_hide_home">Hide Home Feed</div>
+            <div class="setting-desc" data-i18n="opt_hide_home_desc">Clean homepage recommendations</div>
+          </div>
+          <label class="switch toggle-orange">
+            <input type="checkbox" id="hide_home_feed">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_hide_related">Hide Related Videos</div>
+            <div class="setting-desc" data-i18n="opt_hide_related_desc">Hide video sidebar suggestions</div>
+          </div>
+          <label class="switch toggle-orange">
+            <input type="checkbox" id="hide_related">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_hide_endscreens">Hide End Screens</div>
+            <div class="setting-desc" data-i18n="opt_hide_endscreens_desc">Hide video overlays & info cards</div>
+          </div>
+          <label class="switch toggle-orange">
+            <input type="checkbox" id="hide_end_screens">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_disable_glow">Disable Ambient Glow</div>
+            <div class="setting-desc" data-i18n="opt_disable_glow_desc">Disable theatrical background light</div>
+          </div>
+          <label class="switch toggle-orange">
+            <input type="checkbox" id="disable_ambient_glow">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Category: Player Controls -->
+      <div class="category-section">
+        <div class="category-header" data-i18n="cat_player">Player Options</div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_scroll_volume">Scroll Volume</div>
+            <div class="setting-desc" data-i18n="opt_scroll_volume_desc">Scroll over video to change volume</div>
+          </div>
+          <label class="switch toggle-green">
+            <input type="checkbox" id="scroll_volume">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <!-- Video Quality Dropdown Selector -->
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_quality">Video Quality</div>
+            <div class="setting-desc" data-i18n="opt_quality_desc">Preferred default video quality</div>
+          </div>
+          <select id="video_quality" class="dropdown-select border-green">
+            <option value="auto">Auto</option>
+            <option value="480p">480p</option>
+            <option value="720p">720p</option>
+            <option value="1080p">1080p</option>
+            <option value="1440p">1440p</option>
+            <option value="2160p">2160p (4K)</option>
+            <option value="max">Max Quality</option>
+          </select>
+        </div>
+
+        <!-- Playback Speed Dropdown Selector -->
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-name" data-i18n="opt_speed">Playback Speed</div>
+            <div class="setting-desc" data-i18n="opt_speed_desc">Default starting video speed</div>
+          </div>
+          <select id="default_speed" class="dropdown-select border-green">
+            <option value="1">1.0x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+            <option value="1.75">1.75x</option>
+            <option value="2">2.0x</option>
+            <option value="2.5">2.5x</option>
+            <option value="3">3.0x</option>
+            <option value="3.5">3.5x</option>
+            <option value="4">4.0x</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="settings_title">Better YouTube Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="settings-container">
+    
+    <!-- Header -->
+    <header class="settings-header">
+      <h1 data-i18n="settings_title">Better YouTube Settings</h1>
+      <p data-i18n="settings_desc">Configure advanced player features, clean layouts, and language overrides.</p>
+    </header>
+
+    <!-- SECTION 1: SHORTS CONTROLS -->
+    <section class="settings-card">
+      <h2 data-i18n="cat_shorts">Shorts Control</h2>
+      
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_redirect">Redirect Shorts</div>
+          <div class="setting-desc" data-i18n="opt_redirect_desc">Open Shorts in standard player</div>
+        </div>
+        <label class="switch toggle-blue">
+          <input type="checkbox" id="isEnable">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_hide_feed">Hide Shorts Feed</div>
+          <div class="setting-desc" data-i18n="opt_hide_feed_desc">Hide Shorts shelves on feeds</div>
+        </div>
+        <label class="switch toggle-blue">
+          <input type="checkbox" id="isHideVideos">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_remove_shorts">Remove YT Shorts</div>
+          <div class="setting-desc" data-i18n="opt_remove_shorts_desc">Hide Shorts sidebar & pivot tabs</div>
+        </div>
+        <label class="switch toggle-blue">
+          <input type="checkbox" id="isHideTabs">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <!-- SECTION 2: COMMENTS & CHAT -->
+    <section class="settings-card">
+      <h2 data-i18n="cat_comments">Comments & Chat</h2>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_hide_comments">Hide Comments</div>
+          <div class="setting-desc" data-i18n="opt_hide_comments_desc">Remove comments completely</div>
+        </div>
+        <label class="switch toggle-purple">
+          <input type="checkbox" id="hide_comments">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_hide_box">Hide Comment Box</div>
+          <div class="setting-desc" data-i18n="opt_hide_box_desc">Remove comment input box only</div>
+        </div>
+        <label class="switch toggle-purple">
+          <input type="checkbox" id="hide_comment_box">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_hide_chat">Hide Live Chat</div>
+          <div class="setting-desc" data-i18n="opt_hide_chat_desc">Hide Live Chat stream panel</div>
+        </div>
+        <label class="switch toggle-purple">
+          <input type="checkbox" id="hide_chat">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FOCUS & CLUTTER -->
+    <section class="settings-card">
+      <h2 data-i18n="cat_focus">Focus & Clutter</h2>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_hide_home">Hide Home Feed</div>
+          <div class="setting-desc" data-i18n="opt_hide_home_desc">Clean homepage recommendations</div>
+        </div>
+        <label class="switch toggle-orange">
+          <input type="checkbox" id="hide_home_feed">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_hide_related">Hide Related Videos</div>
+          <div class="setting-desc" data-i18n="opt_hide_related_desc">Hide video sidebar suggestions</div>
+        </div>
+        <label class="switch toggle-orange">
+          <input type="checkbox" id="hide_related">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_hide_endscreens">Hide End Screens</div>
+          <div class="setting-desc" data-i18n="opt_hide_endscreens_desc">Hide video overlays & info cards</div>
+        </div>
+        <label class="switch toggle-orange">
+          <input type="checkbox" id="hide_end_screens">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_disable_glow">Disable Ambient Glow</div>
+          <div class="setting-desc" data-i18n="opt_disable_glow_desc">Disable theatrical background light</div>
+        </div>
+        <label class="switch toggle-orange">
+          <input type="checkbox" id="disable_ambient_glow">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PLAYER OPTIONS -->
+    <section class="settings-card">
+      <h2 data-i18n="cat_player">Player Options</h2>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_scroll_volume">Scroll Volume</div>
+          <div class="setting-desc" data-i18n="opt_scroll_volume_desc">Scroll over video to change volume</div>
+        </div>
+        <label class="switch toggle-green">
+          <input type="checkbox" id="scroll_volume">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_quality">Video Quality</div>
+          <div class="setting-desc" data-i18n="opt_quality_desc">Preferred default video quality</div>
+        </div>
+        <select id="video_quality" class="dropdown-select border-green">
+          <option value="auto">Auto</option>
+          <option value="480p">480p</option>
+          <option value="720p">720p</option>
+          <option value="1080p">1080p</option>
+          <option value="1440p">1440p</option>
+          <option value="2160p">2160p (4K)</option>
+          <option value="max">Max Quality</option>
+        </select>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="opt_speed">Playback Speed</div>
+          <div class="setting-desc" data-i18n="opt_speed_desc">Default starting video speed</div>
+        </div>
+        <select id="default_speed" class="dropdown-select border-green">
+          <option value="1">1.0x</option>
+          <option value="1.25">1.25x</option>
+          <option value="1.5">1.5x</option>
+          <option value="1.75">1.75x</option>
+          <option value="2">2.0x</option>
+          <option value="2.5">2.5x</option>
+          <option value="3">3.0x</option>
+          <option value="3.5">3.5x</option>
+          <option value="4">4.0x</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- SECTION 5: SYSTEM & BACKUP -->
+    <section class="settings-card system-card">
+      <h2 data-i18n="lbl_backup">Configuration Backup</h2>
+
+      <!-- Language Selector -->
+      <div class="setting-row border-bottom">
+        <div class="setting-info">
+          <div class="setting-name" data-i18n="lbl_language">Language / Dil</div>
+        </div>
+        <select id="language" class="dropdown-select border-grey">
+          <option value="sys" data-i18n="sys_default">System Default</option>
+          <option value="en">English</option>
+          <option value="tr">Türkçe</option>
+        </select>
+      </div>
+
+      <!-- Backup Buttons -->
+      <div class="backup-actions">
+        <button id="btn-export" class="action-btn export-btn" data-i18n="btn_export">Export Settings</button>
+        <button id="btn-import-trigger" class="action-btn import-btn" data-i18n="btn_import">Import Settings</button>
+        <input type="file" id="import-file" style="display: none;" accept=".json">
+      </div>
+    </section>
+
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
