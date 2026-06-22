@@ -1,6 +1,6 @@
 {
   "ext_name": {
-    "message": "Better YouTube"
+    "message": "BetterYoutubeControls"
   },
   "ext_desc": {
     "message": "YouTube deneyiminizi geliştirin. Shorts, yorumlar, canlı sohbetler, öneriler ve bitiş ekranlarını engelleyin ve oynatıcı kontrollerini özelleştirin."
@@ -146,7 +146,7 @@
     "message": "Ses yükseltici ayarlarını siteye özel tut"
   },
   "settings_title": {
-    "message": "Better YouTube Ayarları"
+    "message": "BetterYoutubeControls Ayarları"
   },
   "settings_desc": {
     "message": "Gelişmiş oynatıcı özelliklerini yapılandırın, düzeni temizleyin ve dili ayarlayın."

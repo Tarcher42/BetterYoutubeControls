@@ -1,6 +1,6 @@
 {
   "ext_name": {
-    "message": "Better YouTube"
+    "message": "BetterYoutubeControls"
   },
   "ext_desc": {
     "message": "Enhance your YouTube experience. Block Shorts, comments, live chats, recommendations, end screens, and customize player controls."
@@ -146,7 +146,7 @@
     "message": "Keep volume booster domain-specific"
   },
   "settings_title": {
-    "message": "Better YouTube Settings"
+    "message": "BetterYoutubeControls Settings"
   },
   "settings_desc": {
     "message": "Configure advanced player features, clean layouts, and language overrides."
