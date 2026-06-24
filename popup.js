@@ -100,10 +100,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (el) {
         let val = settings[key];
         if (val === undefined) {
-          val = key === "video_quality" ? "auto" : "1";
+          val = "auto";
         }
         el.value = val;
-        if (val !== "auto" && val !== "1") {
+        if (val !== "auto") {
           activeCount++;
         }
       }

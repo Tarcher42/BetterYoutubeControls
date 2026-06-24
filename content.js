@@ -138,21 +138,15 @@
   }
 
   function enforceSpeed() {
+    if (playbackSpeedSetting === "auto") return;
     const video = document.querySelector("video");
     if (video && playbackSpeedSetting) {
       const targetSpeed = parseFloat(playbackSpeedSetting);
-      if (video.playbackRate !== targetSpeed) {
+      if (!isNaN(targetSpeed) && video.playbackRate !== targetSpeed) {
         video.playbackRate = targetSpeed;
       }
     }
   }
-
-  // Event: Speed change by user or page (Force our speed)
-  document.addEventListener("ratechange", (e) => {
-    if (e.target.tagName === "VIDEO") {
-      enforceSpeed();
-    }
-  }, true);
 
   // Event: Media elements play (Set speed & quality immediately)
   document.addEventListener("play", (e) => {

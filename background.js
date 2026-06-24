@@ -20,7 +20,7 @@ const DEFAULT_SETTINGS = {
   // Player Options
   scroll_volume: true,
   video_quality: "auto",      // Preferred video resolution ("auto", "480p", "720p", "1080p", "1440p", "2160p", "max")
-  default_speed: "1",         // Playback speed ("1", "1.25", "1.5", "1.75", "2", "2.5", "3", "3.5", "4")
+  default_speed: "auto",         // Playback speed ("auto", "1", "1.25", "1.5", "1.75", "2", "2.5", "3", "3.5", "4")
 
   // Language Override
   language: "en"

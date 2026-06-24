@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let val = settings[key];
         if (val === undefined) {
           if (key === "video_quality") val = "auto";
-          else if (key === "default_speed") val = "1";
+          else if (key === "default_speed") val = "auto";
           else if (key === "language") val = "en";
         }
         el.value = val;
